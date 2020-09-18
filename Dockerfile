@@ -1,4 +1,4 @@
-FROM cdue/nginx-subs-filter
+FROM nginx:stable-alpine
 
 CMD nginx -g "daemon off;"
 

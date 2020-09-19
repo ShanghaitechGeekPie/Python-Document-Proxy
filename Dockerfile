@@ -4,8 +4,6 @@ RUN apt update
 
 RUN apt install nginx
 
-
-CMD nginx -g "daemon off;"
-
+CMD nginx -u -g "daemon off;"
 
 COPY nginx.conf /etc/nginx/

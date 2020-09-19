@@ -1,6 +1,6 @@
 FROM nginx:stable-alpine
 
-RUN mdir -d /usr/share/nginx/
+RUN mkdir -d /usr/share/nginx/
 
 CMD nginx -g "daemon off;"
 

@@ -1,8 +1,4 @@
-FROM ubuntu
-
-RUN apt update
-
-RUN apt install nginx -y
+FROM nginx:stable-alpine
 
 RUN mkdir -p /var/nginx/cache
 

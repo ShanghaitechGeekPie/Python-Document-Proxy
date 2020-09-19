@@ -1,4 +1,8 @@
-FROM nginx:stable-alpine
+FROM ubuntu
+
+RUN apt update
+
+RUN apt install nginx
 
 
 CMD nginx -g "daemon off;"
